@@ -1,4 +1,5 @@
--- no docs pls read
+-- no docs pls read - this is open source.
+-- may anh lon dung luc github em va share (open source r ma) no ko ngau dau huhu
 
 local UserInputService = game:GetService("UserInputService")
 
@@ -179,7 +180,7 @@ function lib:AddWindow()
 	MainTitle["BackgroundTransparency"] = 1;
 	MainTitle["Size"] = UDim2.new(0, 385, 0, 35);
 	MainTitle["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-	MainTitle["Text"] = [[Noguchi Hyuga - Ui Project - 6/20/2025]];
+	MainTitle["Text"] = [[Noguchi Hub - Shit Project]];
 	MainTitle["Name"] = [[MainTitle]];
 	MainTitle["Position"] = UDim2.new(0.10673, 0, 0, 0);
 	MakeDraggable(MainTitle, Main)
