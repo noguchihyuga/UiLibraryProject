@@ -14,6 +14,12 @@ function cac:CreateWindow(v)
         HideSearchBar = true,
         ScrollBarEnabled = false,
     })
+    function lib:Notify(vv)
+        WindUI:Popup({
+            Title = vv.Title,
+            Content = vv.Content,
+        })
+    end
     function lib:AddTab(v2)
         local t = {}
         local Tab = Window:Tab({
