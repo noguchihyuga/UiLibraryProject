@@ -32,7 +32,7 @@ function cac:CreateWindow(v)
             })
             return Paragraph
         end
-        function t:AddToggle(tn)
+        function t:AddToggle(clm,tn)
             local pp = {}
             
             function pp:OnChanged(vl)
@@ -58,41 +58,41 @@ function cac:CreateWindow(v)
             end
             return gg
         end
-        function t:AddButton(v)
+        function t:AddButton(v5)
             local Button = Tab:Button({
-                Title = v.Title,
-                Desc = v.Description,
-                Callback = v.Callback
+                Title = v5.Title,
+                Desc = v5.Description,
+                Callback = v5.Callback
             })
         end
-        function t:AddSection(v)
+        function t:AddSection(v5)
             local Section = Tab:Section({ 
-                Title = v,
+                Title = v5,
                 TextXAlignment = "Left",
                 TextSize = 17, -- Default Size
             })
         end
-        function t:AddSlider(gg, v)
+        function t:AddSlider(gg, v5)
             local gg = {}
             local Slider = Tab:Slider({
-                Title = v.Title,
-                Step = v.Rounding,
+                Title = v5.Title,
+                Step = v5.Rounding,
                 Value = {
-                    Min = v.Min,
-                    Max = v.Max,
-                    Default = v.Default,
+                    Min = v5.Min,
+                    Max = v5.Max,
+                    Default = v5.Default,
                 },
-                Callback = v.Callback
+                Callback = v5.Callback
             })
             return Slider
         end
-        function t:AddInput(gg, v)
+        function t:AddInput(gg, v5)
             local Input = Tab:Input({
-                Title = v.Title,
-                Value = v.Default,
+                Title = v5.Title,
+                Value = v5.Default,
                 Type = "Input",
-                Placeholder = v.Placeholder,
-                Callback = v.Callback
+                Placeholder = v5.Placeholder,
+                Callback = v5.Callback
             })
         end
         return t
