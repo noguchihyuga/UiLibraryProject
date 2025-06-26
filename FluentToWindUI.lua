@@ -45,14 +45,14 @@ function cac:CreateWindow(v)
             end
             return pp
         end
-        function t:AddDropdown(v2, v)
+        function t:AddDropdown(v2, v6)
             local gg = {}
             function gg:OnChanged(v3)
                 local Dropdown = Tab:Dropdown({
-                    Title = v.Title,
-                    Values = v.Values,
-                    Value = typeof(v.Default) == "number" and {v.Values[v.Default]} or {v.Default},
-                    Multi = v.Multi,
+                    Title = v6.Title,
+                    Values = v6.Values,
+                    Value = typeof(v6.Default) == "number" and {v6.Values[v6.Default]} or {v6.Default},
+                    Multi = v6.Multi,
                     Callback = v3
                 })
             end
